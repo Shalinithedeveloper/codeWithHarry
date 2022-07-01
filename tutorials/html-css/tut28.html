@@ -10,7 +10,23 @@
     height: 344px;
     width: 100%;
     border: 2px solid black;
+    /* initialize the container as a flex box */
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    /* flex-direction: column;
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse; */
+    justify-content: space-around;
+
+
+    align-items:center;
+
+
+    /* flex properties for flex container */
+
 }
 .item{
     width: 200px;
@@ -19,6 +35,16 @@
     border: 2px solid rgb(58, 3, 3);
     margin: 10px;
     padding: 3px;
+}
+#item-1{
+    /* order: 2; */
+    flex-grow: 3;
+}
+#item-2{
+order: 5;
+}
+#item-3{
+    order: 40;
 }
 
     </style>
@@ -29,11 +55,11 @@
         <div class="item" id="item-1">firstbox</div>
         <div class="item" id="item-2">secondbox</div>
         <div class="item" id="item-3">thirdbox</div>
-        <div class="item" id="item-4">fourthbox</div>
+        <!-- <div class="item" id="item-4">fourthbox</div>
         <div class="item" id="item-5">fifthbox</div>
         <div class="item" id="item-6">
             sixthbox
-        </div>
+        </div> -->
     </div>
 </body>
 </html>
