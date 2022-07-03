@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on selectors</title>
+</head>
+<style>
+h1{
+    background-color: red;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+/* div li p{
+    color: yellow;
+    background-color: green;
+    font-weight: bold;
+} */
+
+/* div > p{
+    color: yellow;
+    background-color: green;
+    font-weight: bold;
+} */
+
+div + p{
+color: white;
+background-color: red;
+}
+</style>
+<body>
+    <h1>this is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>this is another paragraph inside li</p></li>
+                <li>this will not get affected</li>
+            </ul>
+            <p>this is a paragraph</p>
+        </div>
+       <p>this is another para. </p>
+    </div>
+    <p>this is outermost para</p>
+</body>
+</html>
