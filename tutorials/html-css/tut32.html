@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo selectors</title>
+    <style>
+        .container{
+            display: block;
+            width: 233px;
+            margin: auto;
+        }
+        input{
+            display: block;
+        }
+        input[type="text"]{
+padding: 23px ;
+border: 2px solid red;
+        }
+        a[target]{
+            font-size: 54px;
+            color: violet;
+        }
+        a[target="_self"]{
+            font-size: 44px;
+            color: blue;
+        }
+        li:nth-child(3){
+            color: rgb(255, 72, 0);
+        }
+        li:nth-child(2n+0){
+            color: rgb(255, 208, 0);
+        }
+        li:nth-child(odd){
+            background-color: rgb(43, 220, 226);
+        }
+        li:nth-child(even){
+            background-color: rgb(211, 43, 226);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">go to google</a></h1>
+        <h1><a href="http://facebook.com" target="_self">go to facebook</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">item1</li>
+            <li class="item" id="item-2">item2</li>
+            <li class="item" id="item-3">item3</li>
+            <li class="item" id="item-4">item4</li>
+            <li class="item" id="item-5">item5</li>
+            <li class="item" id="item-6">item6</li>
+            <li class="item" id="item-7">item7</li>
+            <li class="item" id="item-8">item8</li>
+            <li class="item" id="item-9">item9</li>
+        </ul>
+    </div>
+</body>
+</html>
