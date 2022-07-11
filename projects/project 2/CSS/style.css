@@ -14,6 +14,15 @@
     display: flex;
     align-items: center;
 }
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
 /*  Navigation bar:logo and image */
 #logo{
 margin: 34px 45px;
@@ -24,3 +33,66 @@ height: 50px;
 width: 50px;
 }
 /*  Navigation bar:List styling */
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+}
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    font-family: 'Pridi', serif;
+}
+
+#navbar ul li a{
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+#navbar ul li a:hover{
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+/* HOME section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+   
+}
+#home::before{
+    content: "";
+    background: url('../img/giraffe.jpg') no-repeat center center/cover; 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: rgb(255, 0, 0);
+    text-align: center;
+    font-family: 'Pridi', serif;
+}
+#home p{
+    color: rgb(15, 15, 15);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Pridi', serif;
+}
+
+/* utiliy classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
