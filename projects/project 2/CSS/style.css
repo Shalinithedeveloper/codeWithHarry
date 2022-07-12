@@ -65,14 +65,14 @@ width: 50px;
     display: flex;
     flex-direction: column;
     padding: 3px 200px;
-    height: 400px;
+    height:693px;
     justify-content: center;
     align-items: center;
    
 }
 #home::before{
     content: "";
-    background: url('../img/giraffe.jpg') no-repeat center center/cover; 
+    background: url('../img/giraffe.jpg'); 
     position: absolute;
     height: 100%;
     width: 100%;
@@ -80,19 +80,57 @@ width: 50px;
     opacity: 0.89;
 }
 #home h1{
-    color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
     font-family: 'Pridi', serif;
 }
 #home p{
-    color: rgb(15, 15, 15);
+    color: rgb(255, 255, 255);
     text-align: center;
     font-size: 1.5rem;
     font-family: 'Pridi', serif;
 }
+#services-container.h-primarycenter{
+    font-size: 23px;
+}
+/* services section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+#services{}
+#services{}
+#services{}
+
 
 /* utiliy classes */
 .h-primary{
+    font-size: 4.8rem;
+    padding: 12px;
+}
+.h-secondary{
     font-size: 2.8rem;
     padding: 12px;
+}
+.btn{
+    padding: 12px 20px;
+    border: 2px solid white;
+    background-color:brown ;
+    color: white;
+    margin: 20px;
+    font-size: 1.5rem;
+    align-content: center;
+    border-radius: 9px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
 }
