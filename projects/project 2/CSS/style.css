@@ -66,7 +66,7 @@ width: 50px;
     display: flex;
     flex-direction: column;
     padding: 3px 200px;
-    height:690px;
+    height:584px;
     justify-content: center;
     align-items: center;
    
@@ -75,7 +75,7 @@ width: 50px;
     content: "";
     background: url('../img/giraffe.jpg'); 
     position: absolute;
-    height: 100%;
+    height: 600px;
     width: 100%;
     z-index: -1;
     opacity: 0.89;
@@ -119,15 +119,17 @@ width: 50px;
 
 /* clients section */
 #client-section{
-height: 344px;
+    height: 728px;
+    position: relative;
 }
 #client-section::before{
     content: "";
     position: absolute;
-    background: url('../img/istockphoto-1132442970-612x612.jpg');
+    background: url('../img/27743-dark-color-wave-background-image.jpg');
     width: 100%;
-    height: 100%;
+    height: 52%;
     z-index: -1;
+    opacity: 0.7;
 }
 #clients{
     display: flex;
@@ -147,7 +149,38 @@ height: 344px;
     font-size:91px;
     align-content: center;
     justify-content: center;
+    color: rgb(0, 0, 0);
+}
+/* contact section */
+#contact{
+      position: relative;
+}
+#contact::before{
+       content: "";
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       z-index: -1;
+       background: url('../img/contact.jpg');
+       opacity: 0.9;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
     color: white;
+    
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
 }
 
 /* utiliy classes */
@@ -169,6 +202,17 @@ height: 344px;
     justify-content: center;
     font-family: 'Pridi', serif;
 }
+.h-junior{
+    display: flex;
+    font-size:71px;
+    padding: 12px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Pridi', serif;
+    margin-top: -342px;
+    color: white;
+}
+
 .btn{
     padding: 12px 20px;
     border: 2px solid white;
