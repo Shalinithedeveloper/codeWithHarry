@@ -102,7 +102,7 @@ width: 50px;
 #services .box{
     border: 2px solid rgb(133, 133, 133);
     padding: 34px;
-    margin: 3px 6px;
+    margin: 23px 25px;
     border-radius: 23px;
     background-color: rgb(240, 240, 240);
 }
@@ -162,20 +162,29 @@ width: 50px;
        height: 100%;
        z-index: -1;
        background: url('../img/contact.jpg');
-       opacity: 0.9;
+       opacity: 0.7;
 }
 #contact-box{
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 34px;
-    color: white;
+    color: #000000;
     
 }
 #contact-box input,
 #contact-box textarea{
     width: 100%;
     padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box Label{
+    font-size: 1.3rem;
+    font-family: 'Pridi', serif;
 }
 footer{
     background-color: black;
