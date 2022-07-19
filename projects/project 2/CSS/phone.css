@@ -2,18 +2,24 @@
 #navbar{
     flex-direction: column;
 }
+
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+}
 /* Home section */
 #home{
-height: 370px;
-padding: 2px 30px
+height: 353px;
+padding: 86px 19px
+
 
 }
 #home::before{
-height: 370px;
+height: 532px;
 
 }
 #home p{
-font-size: 10px;
+font-size: 13px;
 
 }
 
