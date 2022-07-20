@@ -6,16 +6,17 @@
 #navbar ul li a{
     font-size: 1rem;
     padding: 0px 7px;
+    padding-bottom: 8px;
 }
 /* Home section */
 #home{
-height: 353px;
-padding: 86px 19px
+height: 484px;
+padding: 86px 15px
 
 
 }
 #home::before{
-height: 532px;
+height: 661px;
 
 }
 #home p{
@@ -33,7 +34,11 @@ font-size: 13px;
 
 /* Client section */
 #clients{
-    overflow: hidden;
+    flex-wrap: wrap;
+}
+#clients img{
+    width: 66px;
+    padding: 0px 56px;
 }
 /* Contact us section */
 
@@ -42,4 +47,8 @@ font-size: 13px;
 /* Utility classes */
 .h-primary{
     font-size: 26px;
+}
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
 }

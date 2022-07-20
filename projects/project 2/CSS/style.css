@@ -121,8 +121,8 @@ width: 50px;
 
 /* clients section */
 #client-section{
-    height: 728px;
     position: relative;
+    height: 779px;
 }
 #client-section::before{
     content: "";
@@ -156,6 +156,8 @@ width: 50px;
 /* contact section */
 #contact{
       position: relative;
+      height: 686px;
+      
 }
 #contact::before{
        content: "";
@@ -165,6 +167,7 @@ width: 50px;
        z-index: -1;
        background: url('../img/contact.jpg');
        opacity: 0.7;
+       height: 15px;
 }
 #contact-box{
     display: flex;
@@ -192,6 +195,7 @@ footer{
     background-color: black;
     color: white;
     padding: 9px 20px;
+    height: 12px;
 }
 
 /* utiliy classes */
@@ -221,7 +225,7 @@ footer{
     justify-content: center;
     font-family: 'Pridi', serif;
     margin-top: -342px;
-    color: white;
+    color: black;
 }
 
 .btn{
