@@ -1,72 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Grid + Media Queries</title>
 </head>
-    <style>
-        .container{
-            display: grid;
-            grid-gap: 1rem;
-            grid-template-areas: 'navbar navbar navbar navbar' 'section section section aside';
-        }
-    @media only screen and (max-width:300px){
-        body{
+<style>
+    .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas: 'navbar navbar navbar navbar''section section section aside'
+            'footer footer footer footer';
+    }
+
+    @media only screen and (max-width:300px) {
+        body {
             background-color: red;
+        }
+        span{
+            display: block;
+            text-align: center;
         }
     }
 
     @media only screen and (min-width: 300px) and (max-width:500px) {
-      body{
-        background-color: blue;
-      }
+        body {
+            background-color: blue;
+        }
+        .container {
+            grid-template-areas: 'navbar navbar navbar navbar''section section section section''aside aside aside  aside'
+                'footer footer footer footer';
+        }
+        aside{
+            display: none;
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
     }
 
     @media (min-width:500px) and (max-width:800px) {
-        body{
+        body {
             background-color: yellow;
+        }
+
+        .container {
+            grid-template-areas: 'navbar navbar navbar navbar''section section section section''aside aside aside  aside'
+                'footer footer footer footer';
+        }
+        span{
+            display: block;
+            text-align: center;
         }
     }
 
     @media (min-width: 800px) {
-        body{
+        body {
             background-color: green;
         }
     }
-    .bdr{
-        border: 2px solid black;
-        padding: 23px; 
-        background-color: wheat  
-    }
-    nav{
-        grid-area: navbar;
-     }
-     section{
-        grid-area: section;
-     }
-     aside{
-        grid-area: aside;
-     }
 
-     footer{
+    .bdr {
+        border: 2px solid black;
+        padding: 23px;
+        background-color: wheat
+    }
+
+    nav {
+        grid-area: navbar;
+    }
+
+    section {
+        grid-area: section;
+    }
+
+    aside {
+        grid-area: aside;
+    }
+
+    footer {
         grid-area: footer;
-     }
-    </style>
+        text-align: center;
+    }
+</style>
+
 <body>
     <div class="container">
-        <nav class="bdr" >
-            Home About Contact
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact</span>
         </nav>
         <section class="bdr">
             <h2>Learn CSS in Hindi</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi odio, dignissimos provident commodi ipsam illum repellat corporis itaque magnam distinctio nam ex. Ab voluptatum velit possimus quidem eius consectetur eligendi quisquam molestiae minus, deleniti beatae repellendus fugiat culpa provident doloremque consequatur, corrupti sequi dignissimos, impedit dolor illo? Quaerat, cupiditate? At dolorum iure reprehenderit quam asperiores sit quibusdam amet ex, corrupti veniam illum adipisci libero blanditiis deleniti explicabo similique laboriosam nisi officiis nesciunt. Obcaecati cupiditate cumque aperiam explicabo delectus ad odio, odit at placeat blanditiis quam! Doloremque aliquid qui nostrum, magni et vero eos. Aliquam totam itaque deserunt nemo provident, dolor quis! Nisi repellat quos distinctio, dicta illo optio omnis soluta quibusdam explicabo ut debitis libero fugiat! Consequatur vitae sit atque architecto velit iste quibusdam cum ea. Accusamus, incidunt fuga. Corporis, quia ratione error ex mollitia, eaque aperiam perspiciatis odio nihil provident id beatae optio odit corrupti aliquid enim quisquam amet explicabo! Illo molestiae consectetur repellat! Saepe doloremque nam, voluptas delectus quis ipsam quaerat possimus distinctio molestiae quia, assumenda ex at voluptatum expedita praesentium aperiam nobis velit aspernatur temporibus ipsum fugit natus vero? Voluptate eveniet atque quasi animi dolor veniam, unde distinctio illum rerum maiores, commodi tempora. Eaque quia, odio molestias rem magnam, non in nihil a fugiat molestiae corporis omnis, laudantium praesentium mollitia recusandae ipsum. Deleniti laudantium, consequatur repudiandae est itaque ipsam qui dicta. Hic architecto dolor optio animi blanditiis? Odit et voluptatum adipisci aspernatur nisi nobis ex laudantium quae. Fugiat sed, nisi quas, molestiae aliquam dignissimos voluptatum aperiam minima illum placeat sint amet earum sit unde, commodi at recusandae quia laborum autem repudiandae excepturi. Minus reiciendis inventore excepturi doloribus maxime, facere expedita atque voluptas quos quo fuga aperiam cum voluptate consequatur exercitationem unde dicta pariatur soluta quisquam placeat praesentium distinctio sunt alias? Aliquid, vero? Laudantium ratione illum iure! Iusto nemo illum rem consequuntur eum nisi, quidem, dignissimos veniam quasi ratione quo. Eum adipisci sit iusto corrupti beatae architecto totam. Repellendus excepturi dolor veritatis pariatur placeat voluptas. Voluptatem, dignissimos nostrum? Animi, perferendis, quis itaque architecto vel ex aliquid qui sint, reprehenderit iure ut facilis dicta sed quasi sequi ducimus veritatis libero. Sapiente voluptas, deserunt provident ex odio sint velit corporis vitae ullam aperiam eos, nulla et qui expedita blanditiis impedit eius eaque similique quidem minus! Rerum unde minima, tempora id illum reprehenderit neque molestiae officia excepturi exercitationem laudantium ducimus saepe maxime aliquam, veritatis laborum, quod commodi fugiat eaque nemo ipsa.</p>
         </section>
-        <aside class="bdr" >
+        <aside class="bdr">
 
             <h1>More About Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus illo officiis officia unde! Facilis, est ut, minus illum temporibus in impedit minima commodi earum dolor libero ipsam ullam nostrum culpa quis aspernatur porro eaque laudantium enim totam. Animi hic aliquid earum nulla labore obcaecati enim odio totam eveniet vero? Qui dolor iste ea consequatur adipisci neque rerum aliquid eligendi impedit iusto fugit, provident incidunt! Illo neque nihil autem necessitatibus molestiae saepe distinctio, sit assumenda iusto. Nemo voluptas maiores voluptatibus pariatur. Dolorem obcaecati doloribus quis, ipsa, pariatur vitae numquam atque dignissimos tenetur ut debitis fugiat molestiae maxime beatae sint iusto autem minus totam quasi laboriosam quibusdam corrupti. Voluptas cumque nihil sapiente eveniet, maxime, ratione numquam facere odit voluptatem commodi fugit. Corporis, ab. Odio ab vitae consequuntur ex eveniet assumenda pariatur iste unde commodi, explicabo quod numquam nihil inventore in quasi tenetur accusantium obcaecati voluptatum rem, at earum soluta ipsam necessitatibus exercitationem. Quia ratione optio nobis possimus unde facilis saepe, molestias molestiae. Totam illo temporibus voluptates eos facilis accusamus velit! Commodi alias consequuntur deleniti facere veritatis ipsa repudiandae voluptas ratione vero totam voluptatum quas tempora inventore laudantium iste autem quibusdam voluptatibus obcaecati temporibus, ex eaque maxime. Consequuntur cupiditate aliquid facere cum quidem!</p>
         </aside>
     </div>
     <footer class="bdr">copyright shalini 2022</footer>
 </body>
+
 </html>
