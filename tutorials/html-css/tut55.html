@@ -26,8 +26,24 @@
         // friends.forEach(element => {
         //     console.log('Hello Friend,' + element + 'to modern Javascript')
         // });
-        for (element of friends){
-            console.log('hello friend,' + element + ' to modern Javascript Again');
+        // for (element of friends){
+        //     console.log('hello friend,' + element + ' to modern Javascript Again');
+        // }
+
+        let employee = {
+            name: 'Honey',
+            salary: 2,
+            channel: 'CWH'
+        }
+
+        for(key in employee) {
+            console.log(`The ${key} of employee is ${employee[key]}`);
+        }
+
+        let i = 0;
+        while(i<4){
+            console.log(`${i} is less than 4`);
+            i++;
         }
         
     </script>
