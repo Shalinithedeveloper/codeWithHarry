@@ -1,32 +1,24 @@
-const { application } = require('express');
 const express = require('express');
 const path = require('path');
 
 const app = express();
 const port = 80;
 
+// Express specific stuff
 app.use('/static', express.static('static'))
 
-//set the templates engine as pug
-app.set('view engine', 'pug')
+// Pug specific stuff 
+app.set('view engine', 'pug')//set the templates engine as pug
+app.set('views', path.join(__dirname, 'views'))//set views directory
 
-//set views directory
-app.set('views', path.join(__dirname, 'views'))
-
-//our pug demo endpoint
-app.get("/demo", (req, res)=>{
-res.status(200).render('demo', { title: 'Hey Shalini', message: 'Hello there! and thanks for telling me how to use postman' })
+// endpoints
+app.get('/', (req, res)=>{
+    const con = "this is the best content on the internet so far to use it wisely"
+    const params = {'title': 'I am the best', "content": con}
+    res.status(200).render('index.pug', params);
 })
 
-app.get("/", (req, res)=>{
-    res.send("this is home page of my first express app with harry")
-})
-
-app.get("/about", (req, res)=>{
-    res.send("this is about page of my first express app with harry")
-})
-
-
+// start the server
 app.listen(port, ()=>{
     console.log(`The application started successfully on port ${port}`)
 })
