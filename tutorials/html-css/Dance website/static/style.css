@@ -7,7 +7,7 @@
     background-color: #b50000;
     padding: 20px;
     font-family:  'DynaPuff', cursive;
-    font-size: 23px;
+    font-size: 30px;
    
 }
 
@@ -41,20 +41,46 @@
     flex-direction: column;
     justify-content: center;
     font-family: 'DynaPuff', cursive;
-    font-size: 40px;
+    font-size: 61px;
     align-items: center;
     background: center / cover no-repeat url("/static/bg.jpg");
-   height: 300px;
+   height: 550px;
    background-color: pink;   
 }
 
 #introsection div.small{
-    font-size: 1rem;
+    font-size: 22px;
 }
 
 #introsection div.medium{
-    font-size: 23px;
+    font-size: 36px;
     padding: 12px;
+}
+
+#Missionsection h2{
+    height: 62px;
+    /* background-color: #ad4040;  */
+    color: black;  
+    font-family: 'DynaPuff', cursive;
+    font-size: 38px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.card{
+    background-color: #ffd6d6;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 30%;
+    margin: 21px ;
+    padding: 23px;
+    height: 291px;
+}
+
+.card h1{
+    text-align: center;
+    margin: 12px;
 }
 
 #sponsorssection{
@@ -66,6 +92,7 @@
     text-align: center;
     padding-top: 12px;
 }
+
 
 #footer{
     height: 100px;
