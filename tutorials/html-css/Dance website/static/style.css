@@ -3,18 +3,32 @@
     box-sizing: border-box;
     padding: 0;
 }
+#logo{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 17px;
+    margin-right: 48px;
+}
+#logo img{
+ 
+    height: 42px;
+    filter: invert(1);
+}
 #navbar{
     background-color: #b50000;
     padding: 20px;
     font-family:  'DynaPuff', cursive;
     font-size: 30px;
+    display: -webkit-box;
    
 }
 
 #navbar ul{
-    display: flex;
+    display: -webkit-box;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 #navbar li{
