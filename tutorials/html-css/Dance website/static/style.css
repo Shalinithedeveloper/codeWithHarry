@@ -124,7 +124,7 @@
 }
 #sponsorssection{
     height: 300px;
-    background-color: #ad4040; 
+    background-color: #ff9999; 
     color: white;  
     font-family: 'DynaPuff', cursive;
     font-size: 38px;
@@ -132,8 +132,25 @@
     padding-top: 12px;
 }
 
+#sponsors{
+    height: 231px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.spImages{
+    height: 80%;
+    margin: 20px;
+}
 
 #footer{
-    height: 100px;
-    background-color: purple;   
+    font-size: 29px;
+    color: white;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DynaPuff', cursive;
+    
 }
