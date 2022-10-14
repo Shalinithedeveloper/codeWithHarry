@@ -8,6 +8,7 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .myInput{
@@ -27,4 +28,18 @@ h1{
     border-radius: 20px;
     color: white;
     background-color: #072f5d;
+}
+
+.container{
+    align-items: center;
+    min-height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+}
+.btn:hover{
+    color: #c08801;  
+}
+.myInput:hover{
+    cursor: pointer;
 }
