@@ -10,4 +10,4 @@ db.items.find({rating:{$gt:2.9}, price:{$gt:100000}})
 
 db.items.find({rating:{$gt:2.9}, price:{$lt:100000}})
 
-db.items.find({$or:[{rating:{$gt:2.9}}, {price:{$gt:100000}}]})
+db.items.find({$or:[{rating:{$gt:2.9}}, {price:{$gt:100000}}]}) 
