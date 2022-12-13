@@ -13,7 +13,18 @@ var kittySchema = new mongoose.Schema({
     name: String
 });
 
-var Kitten = mongoose.model('Kitten', kittySchema);
+kittySchema.methods.speak = function speak() {
+    var greeting = "My name is " + this.name
+    console.log(greeting);
+  };
 
-var shaliniKitty = new Kitten({ name: "shaliniKitty Name"});
-console.log(shaliniKitty.name);
+var Kitten = mongoose.model('shaliniKitty', kittySchema);
+
+var shaliniKitty = new Kitten({ name: "shaliniKitty "});
+// console.log(shaliniKitty.name);
+// shaliniKitty.speak();
+
+shaliniKitty.save(function (err, shaliniKitty){
+    if (err) return console.error(err);
+    shaliniKitty.speak();
+});
