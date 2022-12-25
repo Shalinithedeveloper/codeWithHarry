@@ -39,3 +39,6 @@ function updateMap() {
 }
 
 updateMap();
+
+let array = 2;
+console.log(array);
