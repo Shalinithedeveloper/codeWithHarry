@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Lobster&family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Dancing+Script:wght@600&family=Explora&family=Lobster&family=Ubuntu:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    width: 35%;
+    /* border: 12px solid black; */
+    color: white;
+    position: absolute;
+    left: 35%;
+    top: 35%;
+}
+
+.container h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 83px;
+    border-bottom: 5px solid #b738fd;
+    margin-bottom: 34px;
+    padding: 13px 0;
+}
+
+/* .container h1:hover{
+    color: #8c3cb8;
+} */
+.box{
+    
+    width: 100%;
+    border-bottom: 2px solid #ece7ee;
+    /* border:2px solid #b738fd ; */
+    margin: 40px 0px;
+}
+.box input{
+    /* font-family: 'Dancing Script', cursive; */
+    background: none;
+    width: 80%;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    color: #9902eb ;
+}
+
+.box i{
+    width: 25px;
+    /* float: left; */
+    text-align: center;
+}
+
+.btn{
+    cursor: pointer;
+    outline: none;
+    /* width: 25%; */
+    margin: 12px 0;
+    color: white;
+    padding: 11px 24px;
+    border-radius: 10px;
+    font-size: 30px;
+    background: none;
+    border: 2px solid white;
+    font-weight: bolder;
+}
+.btn:hover{
+    color: #b738fd;
+    border: 2px solid #b738fd;
+    /* font-size: 100px; */
+    background-color: white;
+}
