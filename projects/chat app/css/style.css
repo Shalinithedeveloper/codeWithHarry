@@ -7,9 +7,12 @@
 
 .container{
     max-width: 955px;
-    background-color: peachpuff;
+    border: 2px solid black; 
     margin: auto;
     height: 60vh;
+    padding: 23px;
+    margin-bottom: 17px;
+    overflow-y: auto;
 }
 
 .message{
